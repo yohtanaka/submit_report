@@ -1,5 +1,5 @@
-@extends('layouts.tmp')
-@section('title', 'Laravel')
+@extends('layouts.common')
+@section('title', 'システム')
 @section('content')
 
 @endsection
