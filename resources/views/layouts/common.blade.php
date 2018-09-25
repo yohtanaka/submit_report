@@ -18,6 +18,7 @@
 
 	<!-- Styles -->
 	<link href="{{ asset('css/style.css') }}" rel="stylesheet">
+	<link href="{{ asset('css/normalize.css') }}" rel="stylesheet">
 </head>
 <body>
 	<header class="clearfix">
