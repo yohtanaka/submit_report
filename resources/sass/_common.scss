@@ -1,3 +1,7 @@
+body {
+	background: #ccc !important;
+}
+
 header {
 	background: #fff;
 	border-bottom: 2px solid #333;
@@ -8,6 +12,7 @@ header {
 	z-index: 999;
 	.menu {
 		float: right;
+		padding: 0 10px;
 	}
 }
 
@@ -27,3 +32,4 @@ footer {
 		text-align: center;
 	}
 }
+

@@ -1,5 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
 
+body {
+  background: #ccc !important;
+}
+
 header {
   background: #fff;
   border-bottom: 2px solid #333;
@@ -12,6 +16,7 @@ header {
 
 header .menu {
   float: right;
+  padding: 0 10px;
 }
 
 .container {
