@@ -1,6 +1,8 @@
 @extends('layouts.common')
 @section('title', 'システム')
 @section('content')
-<div id="example"></div>
-<script src="{{asset('/js/app.js')}}"></script>
+<ul>
+	<li><a href="{{ route('report') }}">日報一覧</a></li>
+	<li><a href="{{ route('report.create') }}">日報作成</a></li>
+</ul>
 @endsection

@@ -18,3 +18,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::prefix('reports')->group(function () {
+	Route::get('/', 'ReportsController@index')->name('report');
+	Route::get('/create', 'ReportsController@create')->name('report.create');
+});
