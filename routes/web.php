@@ -11,15 +11,18 @@
 |
 */
 
-Route::get('/', function () {
-	return view('index');
-});
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::prefix('reports')->group(function () {
-	Route::get('/', 'ReportsController@index')->name('report');
-	Route::get('/create', 'ReportsController@create')->name('report.create');
+Route::group(['middleware' => ['auth']], function () {
+	Route::get('/', function () {
+		return view('index');
+	});
+
+	Route::prefix('reports')->group(function () {
+		Route::get('/', 'ReportsController@index')->name('report');
+		Route::get('/create', 'ReportsController@create')->name('report.create');
+	});
 });
