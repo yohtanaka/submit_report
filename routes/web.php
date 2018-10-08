@@ -21,7 +21,7 @@ Route::group(['middleware' => ['auth']], function () {
 		return view('index');
 	});
 
-	Route::prefix('reports')->group(function () {
+	Route::prefix('report')->group(function () {
 		Route::get('/', 'ReportsController@index')->name('report');
 		Route::get('/create', 'ReportsController@create')->name('report.create');
 	});

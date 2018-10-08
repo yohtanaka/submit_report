@@ -9,7 +9,10 @@ use App\Models\Check;
 class CheckController extends Controller {
 	public function store(Request $request)
 	{
-	    //
+		$check            = new Check;
+		$check->user_id   = 1;
+		$check->report_id = 1;
+		$check->save();
 	}
 
 	public function destroy($id)
