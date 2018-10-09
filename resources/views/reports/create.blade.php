@@ -38,8 +38,13 @@
 		@endfor
 	</table>
 	<p><a id="addShop" href="#">追加</a></p>
-	<p>報告内容</p>
-	<input type="textarea" name="">
+	<p>報告内容　(2画面表示・全画面表示を行った際はescで戻れます)</p>
+	<textarea id="editor" name="body" rows="8" cols="40"></textarea>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
+	<script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+	<script>
+		var simplemde = new SimpleMDE({ element: document.getElementById("editor") });
+	</script>
 	<p><button class="btn btn-primary">内容確認</button></p>
 </form>
 @endsection
