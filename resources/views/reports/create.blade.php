@@ -36,9 +36,10 @@
 			<td><input type="text" name="shop"></td>
 		</tr>
 		@endfor
-		<tr>
-			<td><a id="addShop" href="#">追加</a></td>
-		</tr>		
 	</table>
+	<p><a id="addShop" href="#">追加</a></p>
+	<p>報告内容</p>
+	<input type="textarea" name="">
+	<p><button class="btn btn-primary">内容確認</button></p>
 </form>
 @endsection
