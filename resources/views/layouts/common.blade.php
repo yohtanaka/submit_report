@@ -12,6 +12,7 @@
 	<!-- Scripts -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="{{ asset('js/main.js') }}" defer></script>
+	<script src="/js/report.js" defer></script>
 
 	<!-- Fonts -->
 	<link rel="dns-prefetch" href="https://fonts.gstatic.com">

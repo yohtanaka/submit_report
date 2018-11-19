@@ -28,15 +28,18 @@
 			<td></td>
 			<td>店名</td>
 			<td>面談者</td>
+			<td></td>
 		</tr>
 		@for($i=1; $i<=8; $i++)
 		<tr>
 			<td>{{ $i }}. </td>
-			<td><input type="text" name="shop"></td>
-			<td><input type="text" name="shop"></td>
+			<td><input type="text" name="shop" data-id="{{ $i }}"></td>
+			<td><input type="text" name="staff"></td>
+			<td><span id="shop{{ $i }}" data-id="shop{{ $i }}">詳細に追加</span></td>
 		</tr>
 		@endfor
 	</table>
+	<div class="added"></div>
 	<p><a id="addShop" href="#">追加</a></p>
 	<p>報告内容　(2画面表示・全画面表示を行った際はescで戻れます)</p>
 	<textarea id="editor" name="body" rows="8" cols="40"></textarea>

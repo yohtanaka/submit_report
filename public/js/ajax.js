@@ -10,7 +10,9 @@ $(function() {
 				reportId: reportId,
 			}
 		}).done(function(data) {
+			console.log('ok');
 		}).fail(function(XMLHttpRequest, textStatus, errorThrown) {
+			console.log('ng');
 		})
 	});
 });

@@ -10,7 +10,7 @@ class CheckController extends Controller {
 	public function store(Request $request)
 	{
 		$check            = new Check;
-		$check->user_id   = 1;
+		$check->user_id   = Auth::user()->id;
 		$check->report_id = 1;
 		$check->save();
 	}

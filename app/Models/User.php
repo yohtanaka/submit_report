@@ -34,10 +34,6 @@ class User extends Authenticatable
         'role',
         'section',
         'position',
-        'bank',
-        'branch_code',
-        'account_type',
-        'account_num',
     ];
 
     /**
